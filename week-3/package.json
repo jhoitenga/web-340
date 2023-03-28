@@ -1,0 +1,17 @@
+{
+  "name": "week-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jennifer Hoitenga",
+  "license": "MIT",
+  "dependencies": {
+    "-": "^0.0.1",
+    "g": "^2.0.1",
+    "moment": "^2.29.4",
+    "pino": "^6.13.4"
+  }
+}
