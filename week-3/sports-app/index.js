@@ -1,5 +1,6 @@
 // Import the TeamManager from the TeamManager.js file
-import { TeamManager } from "./team-manager.js";
+//import { TeamManager } from "./team-manager.js";
+const TeamManager = require('./team-manager'); 
 
 
 // Gets a an array of team objects from the team-manager.js file.

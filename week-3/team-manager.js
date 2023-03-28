@@ -1,3 +1,7 @@
+// Import the Team from team.js file
+//import { Team } from "./team.js";
+const Team = require('./team.js');
+
 // Creating an array of five Team objects and assigning it to a variable named teams
 let Teams = [
     new Team ("Chicago Bulls", "Benny the Bull", "17"),
@@ -8,12 +12,9 @@ let Teams = [
 ];
 
 // Creating a function named getTeams and return the array of Team objects
-function getTeams(){
+module.exports.getTeams = function() {
     return Teams;
-};
-
-// Export the function using Node’s module system
-module.exports = getTeams();
+}
 
 // Creating a getTeam function with a single parameter for name, return the Team object with that name
 module.exports.getTeam = function(name) {
@@ -26,7 +27,7 @@ module.exports.getTeam = function(name) {
 
 // Creating a displayTeam function with a single parameter for a team object and return a string with the team name, mascot and player count
 module.exports.displayTeam = function(team) {
-    return "Name: " + team.name + "\n Mascot:" + team.mascot + "\n Player Count: " + team.playerCount;
+    return "Name: " + team.name + "\nMascot: " + team.mascot + "\nPlayer Count: " + team.playerCount + "\n";
 }
 
 
